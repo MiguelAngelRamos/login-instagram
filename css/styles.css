@@ -11980,15 +11980,48 @@ body {
   height: 100vh;
 }
 
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-card {
+  background-color: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  padding: 20px 40px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .brand-logo {
-  background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png");
-  background-position: 0px -52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 175px;
   height: 51px;
+  background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png");
+  background-repeat: no-repeat;
+  background-position: 0px -52px;
+  margin-bottom: 20px;
 }
 
 .login-form {
   width: 100%;
+}
+.login-form .form-group {
+  margin-bottom: 6px;
+}
+.login-form .form-control {
+  margin-bottom: 14px;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  padding: 9px 0 7px 8px;
+  font-size: 12px;
 }
 .login-form .btn-login {
   background-color: #4BB4F8;
@@ -11998,4 +12031,18 @@ body {
   color: #FFFFFF;
   font-weight: 600;
   width: 100%;
+}
+.login-form .btn-login:hover {
+  background-color: #1aa0f6;
+}
+.login-form .separator {
+  color: tomato;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+.login-form .separator:before, .login-form .separator:after {
+  content: "@.@ -_-";
 }/*# sourceMappingURL=styles.css.map */

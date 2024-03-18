@@ -21,21 +21,49 @@ $facebook-btn-bg-color: #385185;
 body {
   font-family: $font-family;
   background-color: $background-color;
-  @include flex-center();
+  @include flex-center;
   height: 100vh;
 }
 
+.login-container {
+  @include flex-center;
+  flex-direction: column;
+}
+
+.login-card {
+  background-color: $background-color;
+  border: 1px solid $border-color;
+  padding: 20px 40px;
+  width: 350px;
+  @include flex-center;
+  flex-direction: column;
+}
 
 .brand-logo {
-  background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png");
-  background-position: 0px -52px;
+  @include flex-center;
   width: 175px;
   height: 51px;
-
+  background-image: url("https://static.cdninstagram.com/rsrc.php/v3/yM/r/8n91YnfPq0s.png");
+  background-repeat: no-repeat;
+  background-position: 0px -52px;
+  margin-bottom: 20px;
 }
 
 .login-form {
   width: 100%;
+
+  .form-group {
+    margin-bottom: 6px;
+  }
+
+  .form-control {
+    margin-bottom: 14px;
+    border: 1px solid $border-color;
+    border-radius: 3px;
+    padding: 9px 0 7px 8px;
+    font-size: 12px;
+    // line-height: 18px;
+  }
   .btn-login {
     background-color: $primary-color;
     border: none;
@@ -44,6 +72,27 @@ body {
     color: #FFFFFF;
     font-weight: 600;
     width: 100%;
+    // text-transform: uppercase;
+    
+    &:hover {
+      // este mayor el porcentaje mas oscuro
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  .separator {
+    color: tomato;
+    text-transform: uppercase;
+    @include flex-center;
+    margin: 10px 0;
+    // separator:before
+    // separator:after
+    &:before,
+    &:after {
+      content: '@.@ -_-'
+    }
   }
 }
+
+
 // background-position: 0px -52px;
