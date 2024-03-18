@@ -12036,13 +12036,40 @@ body {
   background-color: #1aa0f6;
 }
 .login-form .separator {
-  color: tomato;
+  padding: 20px;
+  color: #DBDBDB;
   text-transform: uppercase;
   display: flex;
-  justify-content: center;
   align-items: center;
+  text-align: center;
   margin: 10px 0;
 }
 .login-form .separator:before, .login-form .separator:after {
-  content: "@.@ -_-";
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #DBDBDB;
+  margin: 0 16px;
+}
+.login-form .btn-login-fb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #385185;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 600;
+  margin-bottom: 18px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 4px;
+}
+.login-form .btn-login-fb:hover {
+  background-color: #293b61;
+}
+.login-form .forgot-password {
+  color: #385185;
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 12px;
 }/*# sourceMappingURL=styles.css.map */
