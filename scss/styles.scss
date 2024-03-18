@@ -125,5 +125,14 @@ body {
   }
 }
 
+.signup-suggestion {
+  text-align: center;
+  background-color: $background-color;
+  padding: 15px 0;
+  width: 350px;
+  font-size: 14px;
+  @include flex-center;
+  flex-direction: column;
+}
 
 // background-position: 0px -52px;
